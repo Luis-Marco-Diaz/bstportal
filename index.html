@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Autor" content="Front End Developer Luis Marco Díaz">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>BSTPortal.com</title>
+</head>      
+<body>
+    <header class="header">
+        <nav class="navbar grid--container">
+          <a class="navbar__logo" href="#" >
+            <img alt="BSTPortal.com" src="assets\img\BST-Logo-web.png" width="250" height="auto">  
+          </a>
+            <div id="nav" class="navbar__menu">
+            <a href="#close"><i class='bx bx-x  btn__close navbar__icon'></i></a>
+              <ul class="navbar__list">
+              <li class="navbar__item">
+                <a class="navbar__link" href="#home">Home</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="#about">About Us</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="#companys">Companys List</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="#contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <a href="#nav"><i class="bx bx-menu btn__open navbar__icon"></i></a>
+        </nav>
+    </header>     
+    <section id="home" class="home">
+        <div class="home__container  grid--container">
+            <div>
+              <h1 class="home__title">Connect with wholesale
+                distributors from around
+                THE WORLD</h1>
+                <p class="home__description" >Promote your inventories through our portal and connect with distributors of industrial parts around the world.</p>
+                <button class="btn btn--primary">90 days Free Trail !</button>
+                <div>
+                  <p>Testimonios</p>
+                </div>
+            </div>
+            <div>
+              <img class="BST-bearings" src="assets\img\BSTBearingsWorld-2.png" alt="Bearings">
+            </div>
+        </div>
+    </section>
+    <section id ="divider" >
+      <div class="divider">
+        <br>
+        <br>
+        <br>
+      </div>
+    </section>
+    <section id="about" class="about">
+          <div class="inline__container">
+              <h2 style="font-size: 30px;" >Over than 10,000 partners</h2>
+              <img src="https://picsum.photos/200/300" alt="">
+          </div>
+          <div class="about_container_problem">
+               <p class="about__description">
+                <b style="font-size: 25px;">Our Solution for the industry</b>
+                <br>
+                <br>
+                <b>BSTPortal.com</b> is an Exclusive International Web Portal for <i>Wholesale Distributors and Manufacturers</i> of: <br>
+                (1) Bearings, Belts, Sprockets, Roller Chains, Pulleys, Seals, Couplings and related products.<br>
+                (2) Parts for Heavy Equipment: Tractor Trucks, Buses and Trailers.<br>
+                (3) Spare Parts for Agricultural Equipment.<br>
+                (4) Heavy-Duty Construction and Mining Equipment.</p>
+
+               <img src="https://picsum.photos/200/300" alt="Acceso a piezas y refacciones inmediatas en todo el mundo" class="img_abasto">
+          </div>
+          <div class= "about__cards">
+              <div class="card_img">
+                <img src="https://picsum.photos/200/300" alt="Op1">
+              </div>
+              <div class="card_img">
+                <img src="https://picsum.photos/200/300" alt="Op2">
+              </div>
+              <div class="card_img">
+                <img src="https://picsum.photos/200/300" alt="Op3">
+              </div>
+          </div>
+    </section>
+    <section id ="divider" >
+      <div class="divider">
+        <br>
+        <br>
+        <br>
+      </div>
+    </section>
+    <section id="companys" class="companys">
+      <div class="inline__container" >
+        <h2 style="font-size: 30px;">know our Inventories Search Mode around the world</h2>
+        <p style="font-size: 25px;"> <b>BSTPortal.com</b>is the solution to every aspect that your company requires</p>
+      </div>
+          <div class="companys_img" >
+             <div class="card_video">
+              <iframe class="responsive-iframe" src="https://www.youtube.com/embed/fuXD0rehqq8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+             </div>
+          </div>
+       <div class="inline__container" >
+        <button class="btn btn--second ">90 days Free Trail !</button>
+       </div>
+    </section>
+    <section id ="divider" >
+      <div class="divider">
+        <br>
+        <br>
+        <br>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <div class="inline__container">
+         <div class="contact_instructions">
+          <h2 class="contact__info-title">Access our online inventories now with your pre-registration</h2>
+          <p class="contact__info-description">Your data will always be protected, this form is only to create your user registration on our portal <b>completely for free</b></p>
+        </div>
+        <div class="contact__form">
+          <h3 class="contact__form-title">Acess to BSTPortal.com</h3>
+        <form id="form">
+            <div class="contact__form-group">
+              <label for="name" class="contact__form-label">Name</label>
+              <input type="text" id="name" name="name" class="contact__form-input">
+            </div>
+            <div class="contact__form-group">
+              <label for="email" class="contact__form-label">Email</label>
+              <input type="email" id="email" name="email" class="contact__form-input">
+            </div>
+              <div class="contact__form-group">
+              <label for="company" class="contact__form-label">Company</label>
+              <input type="text" id="company" name="company" class="contact__form-input">
+             </div>
+             <div class="contact__form-group">
+              <label for="country" class="contact__form-label">Country</label>
+              <input type="text" id="country" name="country" class="contact__form-input">
+            </div>
+            <div class="contact__form-group">
+              <label for="web" class="contact__form-label">Web Site</label>
+              <input type="text" id="web" name="web" class="contact__form-input">
+            </div>
+            <button type="submit" class="btn btn--primary">Enviar</button>
+        </form>
+        </div>
+        <div class="Ending">
+          <div class="inline__container, align ">
+            <p><b>The solution to every aspect that your company requires</b></p>
+                <li>Locate spare parts! High probability of acquiring your industrial components.</li>
+                <li>Reduce your delivery times and abandon the long terms of the manufacturer.</li>
+                <li>Forget about surpluses! Maintain a high turnover in your inventories.</li>
+                <li>Expand your business to the international market.</li>
+                <li>Create alliances that will allow you to keep your company at the forefront.</li>
+              <p>Additionally, you have the option of advertising within the same portal so that more affiliated companies reach you.
+                <br>
+                <br>
+              Get your free trial membership and don't miss the opportunity to take your business to the next level.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  <footer class="footer">
+   <div>
+    <h3 style="text-align: center;" >Contact Us</h3>
+    <address class="footer__info-data">
+        <div>
+           <i class='bx bxs-map' style=" font-size: 3rem;"></i>
+            <span><br>
+              <b>BST GLOBAL TRADE CORPORATION</b>
+             <br>1910 THOMES AVE
+              <br>CHEYENNE WY 82001
+            </span>
+        </div>
+      <div>
+        <i class='bx bx-phone' style=" font-size: 3rem;" ></i>
+        <span class="footer__info-number"><br>
+          <a href="tel:+1234567890"> +52 55 5503 6024</a>
+        </span>
+      </div>
+      <div>
+        <i class='bx bx-envelope' style=" font-size: 3rem;" ></i>
+        <span class="footer__info-mail"><br>
+          <a id="mail" href="marketing@bstportal.com">marketing@bstportal.com</a>
+        </span>
+      </div>
+    </address>
+    <p style="font-size: small; text-align: center;">Copyright © BSTPortal.com All Rights Reserved</p>
+   </div>
+  </footer>
+</body>
+</html>
