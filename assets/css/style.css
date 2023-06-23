@@ -17,9 +17,8 @@
     --header-height: 60px;
   
     /* Colores */
-    --bg-color: #e30613;
+    --bg-color: #000000;
     --text-primary:#ffffff;
-    ;
   
      /* Tipografía */
      --body-font:'Geologica', system-ui, -apple-system, BlinkMacSystemFont, 'Open Sans', 'Helvetica Neue';
@@ -47,8 +46,8 @@
    
      /* Sombras */
      --box-shadow: 0px 10px 100px rgba(0, 0, 0, .10);
+     --box-shadow-white: 0px 10px 100px rgb(255, 255, 255);
      --button-shadow: 0px 3px 10px #0b0b0b;
-     --text-shadow: 2px 3px #ee991a55
   }
 
   @media (min-width: 768px) {
@@ -65,20 +64,19 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
-    padding: 0%;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
   }
   body {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     margin: 0;
-    background-color: #e30613;
     color: var(--text-primary)
+  }
+  h1 {
+    font-size: 2rem;
+  }
+
+  h1, h2 {
+    text-shadow: 0 0 30px #fff;
   }
   .inline__container {
     display: flex;
@@ -96,12 +94,6 @@ html {
   a {
     text-decoration: none;
   }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  
   .btn {
     display: inline-block;
     border: none;
@@ -133,13 +125,12 @@ html {
 
   /* ============ HEADER & NAVBAR ============= */
 
-  .header {
-    position: fixed;
+.header {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     background-color: #020202;
-    box-shadow: var(--box-shadow);
     z-index: var(--z-fixed);
   }
   
@@ -185,7 +176,7 @@ html {
 }
 
 .btn__close:hover{
-  background-color: #0b0b0b;
+  background-color: #ff0000;
 }
 
 .navbar__list{
@@ -216,14 +207,23 @@ html {
 /* ======== Home ========== */
 .home {
   padding-top: 100px;
+  background-image: url(/assets/img/Conection\ World\ Header-BSTPortal.png);
+  min-height: 700px; 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
 }
 .home__container {
-  display: flex;
-  align-items: center;
+  display: grid;
+  align-items: end;
   justify-content: center;
+  text-align: center;
+  min-height: 800px; 
   gap: 8rem;
   padding: 3rem;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 }
 
 .BST-bearings {
@@ -237,8 +237,8 @@ html {
   min-width: 300px;
   padding: .75rem 1.5rem;
   font-size: var(--normal-font-size);
-  color: #000000;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #ff0000;
   border: none;
   border-radius: 15px;
 }
@@ -253,8 +253,11 @@ html {
 
 /* ==========About========*/
 .about {
-  background-color: #ffffff;
-  color: #000000;
+  background-image: url(/assets/img/Conection-world-BSTPortal-Landing-Body.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  color: #ffffff;
   padding-top: 10px;
   padding-bottom: 60px;
  
@@ -265,11 +268,11 @@ html {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  padding: 20px;
 }
-.img_abasto {
-  background-color: rgba(29, 213, 53, 0.394);
-  width: 450px;
-  height: 400px;
+.about_img {
+  width: 650px;
+  height: 454px;
   border-radius: 60px 10px 1px 1px;
   margin-right: 15px;
 }
@@ -284,24 +287,29 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  text-align: center;
   align-items: center;
   margin: 10px;
   gap: 2rem;
   color: #000000;
 }
 
+.img_cards {
+  max-width: 340px;
+}
+
 .card_img {
   min-width: 340px;
   min-height: 450px;
   background-color: #ffffff;
-  padding: 4rem 2rem 2rem;
+  padding: 2rem;
   border-radius: 5px;
   box-shadow: var(--box-shadow);
   transition: background .3s;
   transition: 0.5s;
 }
 .card_img:hover {
-  background-color: rgba(69, 69, 69, 0.259);
+  background-color: rgba(7, 147, 241, 0.387);
   transform: scaleY(1.1) scaleX(1.1);
   color: white;
 } 
@@ -309,8 +317,11 @@ html {
 /*========== Companys ======*/
 
 .companys {
-  background-color: #ffffff;
-  color: #000000;
+  background-image: url(/assets/img/Conection-world-Landing-Body2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  color: #ffffff;
   padding-top: 10px;
   padding-bottom: 60px;
 }
@@ -328,7 +339,7 @@ html {
 
 .card_video {
   position: relative;
-  width: 100%;
+  width: 75%;
   overflow: hidden;
   padding-top: 56.25%;
   box-shadow: 10px 10px 100px rgba(23, 0, 0, 0.377);
@@ -342,6 +353,7 @@ html {
   right: 0;
   width: 100%;
   height: 100%;
+  
   border: none;
 }
 
@@ -358,19 +370,24 @@ html {
 
 /* ========= Contact =========*/
 .contact {
-  background-color: #ffffff;
-  color: #000000;
+  background-image: url(/assets/img/Conection-world-Landing-Body2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  color: #ffffff;
   padding-top: 10px;
   padding-bottom: 60px;
 }
-.contact_instructions {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 650px;
-  box-sizing: border-box;
+.contact_instructions{
+  text-align: center;
 }
+
+.contact_container_2 {
+  display: inline-grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+}
+
 .contact__form{
   color: #ffffff;
   width: 70%;
@@ -379,6 +396,9 @@ html {
   border-radius: 5px;
   margin: 0 auto;
   box-shadow: var(--box-shadow);
+}
+.contact_text{
+  padding: 1rem;
 }
 
 .contact__form-group {
@@ -391,7 +411,7 @@ html {
 }
 
 .contact__form-input {
-  width: 100%;
+  width: 90%;
   padding: 1rem;
   font-size: 1.2rem;
   font-weight: var(--font-semi-bold);
@@ -520,21 +540,8 @@ html {
   .navbar__item {
     margin: 0;
   }
-
-  .home__social {
-    position: relative;
-    top: 0;
-    left: 0;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-  }
   .home__title {
     margin-top: 2rem;
-    font-size: 2rem;
   }
   .home__description {
     font-size: 1.3rem;
