@@ -667,7 +667,7 @@ html {
 
   }
   .btn--second {
-   
+    max-width: 200px;
     font-size: 16px;
   }
   
