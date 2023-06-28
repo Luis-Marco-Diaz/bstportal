@@ -671,7 +671,7 @@ html {
   }
   
   .about_img {
-    max-width: 450px;
+    max-width: 80vw;
   }
 
   .inline__container {
@@ -761,8 +761,7 @@ html {
   .footer__info-data {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-  } 
+    justify-content: left
 }
 
 
