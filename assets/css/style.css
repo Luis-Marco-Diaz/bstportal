@@ -477,8 +477,8 @@ html {
   font-style: normal;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   gap: 3rem;
   padding: 2rem 1rem;
 }
@@ -493,7 +493,6 @@ html {
 
 
 .footer__copy {
-  text-align: center;
   margin-top: 2rem;
   margin-bottom: 0;
   border-top: 1px solid #222;
@@ -569,7 +568,7 @@ html {
   .footer__info-data {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
   } 
 }
 
@@ -665,7 +664,7 @@ html {
   .btn--primary {
   position: relative;
   }
-  .btn--second {
+  .btn--second, .btn--primary {
     max-width: 250px;
     font-size: 16px;
   }
@@ -761,7 +760,9 @@ html {
   .footer__info-data {
     display: flex;
     flex-direction: column;
-    justify-content: left
+    justify-content: left;
+    align-items: left;
+    text-align: left;
 }
 
 
@@ -787,4 +788,6 @@ html {
   .home__title {
     margin-top: 2rem;
   }
+}
+
 }
