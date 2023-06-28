@@ -610,7 +610,7 @@ html {
   .footer__info-data {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
   } 
 }
 
@@ -663,9 +663,11 @@ html {
 
   .btn--primary {
   position: relative;
+  max-width: 200px;
+
   }
-  .btn--second, .btn--primary {
-    max-width: 250px;
+  .btn--second {
+   
     font-size: 16px;
   }
   
