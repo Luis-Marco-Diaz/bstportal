@@ -22,7 +22,7 @@
   
      /* Tipografía */
      --body-font:'Geologica', system-ui, -apple-system, BlinkMacSystemFont, 'Open Sans', 'Helvetica Neue';
-     --big-font-size: 32px;
+     --big-font-size: 28px;
      --normal-font-size: 20px;
      --small-font-size: 16px;
      --smaller-font-size: 12px;
@@ -72,9 +72,6 @@ html {
     color: var(--text-primary);
     background-color: var(--bg-color);
   }
-  h1 {
-    font-size: 2rem;
-  }
 
   h1, h2 {
     text-shadow: 0 0 30px #fff;
@@ -90,6 +87,10 @@ html {
     list-style: none;
     margin: 0;
     padding: 0;
+  }
+
+  li {
+    text-align: justify;
   }
   
   a {
@@ -237,11 +238,10 @@ html {
   top: 0;
 }
 
-
 /* ======== Home ========== */
 .home {
-  background-image: url(/assets/img/Conection\ World\ Header-BSTPortal.png);
-  min-height: 500px; 
+  background-image: url(/assets/img/Landing-Header_English.jpg);
+  min-height: 500px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -249,15 +249,29 @@ html {
   background-position: center;
   background-color: #000000;
 }
+
+.home_es {
+  background-image: url(/assets/img/Landing-Header_Español.jpg);
+  min-height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: #000000;
+}
+
+.home__title {
+  margin-top: 3rem;
+}
 .home__container {
   display: grid;
-  align-items: end;
+  align-items: start;
   justify-content: center;
   text-align: center;
   min-height: 800px; 
   gap: 8rem;
-  padding: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 4rem;
 }
 
 .BST-bearings {
@@ -268,7 +282,7 @@ html {
 
 
 .btn--primary {
-  min-width: 300px;
+  min-width: 200px;
   padding: .75rem 1.5rem;
   font-size: var(--normal-font-size);
   color: #ffffff;
@@ -304,40 +318,52 @@ html {
   box-sizing: border-box;
   padding: 20px;
 }
-.about_img {
-  width: 600px;
+
+
+.about_img_1 {
+  width: 520px;
   height: auto;
-  border-radius: 60px 10px 1px 1px;
+  margin-left: 15px;
+}
+.about__description_1 {
+  line-height: 1.5rem;
+  padding: 2%;
+  padding-left: 4%;
+}
+
+.about_img {
+  width: 520px;
+  height: auto;
   margin-right: 15px;
 }
 .about__description {
-  text-align: left;
-  line-height: 2rem;
+  line-height: 1.5rem;
   padding: 2%;
+  padding-right: 4%;
 }
 
 .about__cards {
-  padding-top: 30px;
+  padding-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   text-align: center;
   align-items: center;
   margin: 10px;
-  gap: 2rem;
+  gap: 1.5rem;
   color: #000000;
 }
-
 .img_cards {
-  width: 340px;
+  min-width: 250px;
+  max-width: 300px;
 }
 
 .card_img {
   font-size: var(--smaller-font-size);
-  min-width: 340px;
-  min-height: 450px;
+  min-width: 300px;
+  max-width: 370px;
   background-color: #ffffff;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 5px;
   box-shadow: var(--box-shadow);
   transition: background .3s;
@@ -349,6 +375,52 @@ html {
   transform: scaleY(1.1) scaleX(1.1);
   color: white;
 } 
+
+.downloads_secction{
+  height: 450px;
+  
+}
+.downloads_container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--smaller-font-size);
+  max-width: 700px;
+  margin-top: 50px;
+  z-index: 3;
+}
+
+.downloads{
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid red;
+  color: #fff;
+  box-shadow: 0 0 40px 40px rgb(255, 0, 0) inset, 0 0 0 0 rgb(252, 3, 3);
+  transition: all 250ms ease-in-out;
+  border-radius: 0.6em;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 10px 0 rgb(251, 255, 0) inset, 0 0 10px 4px rgb(242, 206, 0);
+    color:rgb(251, 255, 0);
+    border: 2px solid rgb(255, 255, 255);
+  }
+}
 
 /*========== Companys ======*/
 
@@ -394,9 +466,9 @@ html {
 }
 
 .btn--second {
-  width: 450px;
+  width: 350px;
   padding: 1rem 1.5rem;
-  font-size: 30px;
+  font-size: 20px;
   color: #ffffff;
   background-color: #e30613;
   border: none;
@@ -477,9 +549,8 @@ html {
   font-style: normal;
   display: flex;
   flex-direction: row;
-  justify-content: left;
-  align-items: left;
-  gap: 3rem;
+  justify-content: center;
+  gap: 2rem;
   padding: 2rem 1rem;
 }
 
@@ -509,6 +580,20 @@ html {
   color: rgb(255, 255, 255);
 }
 
+/* ============= Media Queries Extra Large size ============= */
+
+@media (min-width: 1200px) {
+  .home {
+    background-image: url(/assets/img/Landing-Header-BSTPORTAL_H1.png);
+    min-height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 1200px;
+    background-position: center;
+    background-color: #000000;
+  }  
+}
 /* ============= Media Queries Medium size ============= */
 
 @media (max-width: 768px) {
@@ -526,10 +611,8 @@ html {
   .navbar__menu:target{
     box-shadow: 10px 10px 5px rgba(37, 31, 107, 0.7);;
   }
-  
   .home__info {
     padding: 70px 3% 30px;
-      
   }
   .btn--primary {
   position: relative;
@@ -545,7 +628,7 @@ html {
   .about_container_problem {
     display: inline;
   }
-  .about__description {
+  .about__description, .about__description_1 {
     line-height: 1.4rem;
     padding: 5%;
     text-align: justify;
@@ -568,7 +651,6 @@ html {
   .footer__info-data {
     display: flex;
     flex-direction: row;
-    justify-content: left;
   } 
 }
 
@@ -578,30 +660,23 @@ html {
   .section {
     padding: 6rem 0 5rem;
   }
-
   .btn__open,
   .btn__close {
     display: none;
   }
-
   .navbar__list {
     flex-direction: row;
     gap: 1rem;
   }
-
   .navbar__item {
     margin: 0;
   }
   .home__title {
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
   .home__description {
     font-size: 1.3rem;
   }
-  .home__social-link {
-    font-size: 2rem;
-  }
-
   .contact__container {
     grid-template-columns: .5fr 1fr;
     justify-content: center;
@@ -610,13 +685,17 @@ html {
   .footer__info-data {
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
   } 
 }
 
 /* ============= Media Queries Small size ============= */
 
 @media (max-width: 596px) {
+  
+  h1, h2 {
+    text-shadow: 0 0 15px #fff;
+  }
   .navbar__menu {
     position: fixed;
     left: 0;
@@ -641,19 +720,18 @@ html {
 
 
   .home {
-    background-image: url(/assets/img/Conection\ World\ Header-BSTPortal.png);
+    background-image: url(/assets/img/Landing-Header-BSTPORTAL_H1.png);
     background-size: contain;
     background-attachment:scroll;
-    background-position: top;
-    margin-top: 100px;
+    background-position: center;
     background-color: #000000;
   }
+
   .home__container {
     display: grid;
-    align-items: end;
+    align-items: center;
     text-align: center;
-    min-height: 600px;
-    padding-bottom: 3rem;
+    min-height: 400px;
   }
   
   .section{
@@ -663,7 +741,7 @@ html {
 
   .btn--primary {
   position: relative;
-  max-width: 200px;
+  max-width: 100px;
 
   }
   .btn--second {
@@ -673,6 +751,9 @@ html {
   
   .about_img {
     max-width: 80vw;
+  }
+  .about_img_1 {
+    width: 80vw;
   }
 
   .inline__container {
@@ -685,7 +766,7 @@ html {
   .about_container_problem {
     display: inline;
   }
-  .about__description {
+  .about__description, .about__description_1 {
     line-height: 1.4rem;
     padding: 5%;
     text-align: justify;
@@ -720,7 +801,7 @@ html {
 
   .contact__form{
     color: #ffffff;
-    width: 80%;
+    width: 90%;
     padding: 1rem;
     background-color: #9f0404;
     border-radius: 5px;
@@ -742,7 +823,7 @@ html {
   }
   
   .contact__form-input {
-    width: 90%;
+    width: 85%;
     padding: 1rem;
     font-size: 1.2rem;
     font-weight: var(--font-semi-bold);
@@ -788,8 +869,13 @@ html {
     margin: 0;
   }
   .home__title {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
+  .footer__info-data {
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+}
 }
 
 }
