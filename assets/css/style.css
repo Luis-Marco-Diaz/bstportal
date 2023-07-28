@@ -465,25 +465,18 @@ html {
   width: 100%;
 }
 
-
-
-
-.downloads_secction{
-  height: 450px;
-  
-}
 .downloads_container {
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
-  font-size: var(--smaller-font-size);
-  max-width: 700px;
   margin-top: 50px;
   z-index: 3;
 }
 
 .downloads{
+  font-size: 18px;
   box-sizing: border-box;
   background: rgb(57,57,57);
 background: linear-gradient(90deg, rgba(57,57,57,1) 0%, rgba(180,180,180,1) 20%, rgba(64,64,65,1) 51%, rgba(180,180,180,1) 80%, rgba(164,164,164,1) 100%);
@@ -493,16 +486,12 @@ background: linear-gradient(90deg, rgba(57,57,57,1) 0%, rgba(180,180,180,1) 20%,
   border-radius: 0.6em;
   color: rgb(255, 255, 255);
   cursor: pointer;
-  display: flex;
-  align-self: center;
-  font-size: 1rem;
-  font-weight: 400;
   line-height: 1;
   margin: 20px;
   padding: 1.2em 2.8em;
-  text-align: center;
   text-transform: uppercase;
   font-weight: 800;
+
   
   &:hover,
   &:focus {
@@ -794,21 +783,28 @@ background: linear-gradient(90deg, rgba(57,57,57,1) 0%, rgba(180,180,180,1) 20%,
   .navbar__icon {
     margin-right: 25px;
   }
-
-
-  .home {
-    background-image: url(../img/Landing-Header_English.jpg);
-    background-size: cover;
-    background-position: top;
-    background-attachment: fixed;
+  
+  .home_es {
+    background-image: url(../img/Landing-Header_Español.jpg);
+    min-height: 450px;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-color: #000000;
   }
-
   .home__container {
-    display: grid;
-    align-items: center;
-    text-align: center;
-    min-height: 400px;
+    display: none;
+    align-items: top;
+    justify-content: top;
+    min-height: 100px; 
+    gap: 1rem;
+    padding-top: 1rem;
   }
+  .interrogants{
+    animation: none;
+  }
+
   
   .section{
     margin-left: 10px;
