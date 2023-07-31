@@ -250,6 +250,44 @@ html {
   background-position: center;
   background-color: #000000;
 }
+.home_de {
+  background-image: url(../img/Landing-Header_DEUTSCH.jpg);
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: #000000;
+}
+.home_fr {
+  background-image: url(../img/Landing-Header_French.jpg);
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: #000000;
+}
+.home_it {
+  background-image: url(../img/Landing-Header_Italian.jpg);
+  height: 950px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: #000000;
+}
+.home_pt {
+  background-image: url(../img/Landing-Header_Portuguese.jpg);
+  height: 950px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: #000000;
+}
 
 .home_es {
   background-image: url(../img/Landing-Header_Español.jpg);
@@ -405,7 +443,7 @@ html {
 
 
 .clipptath {
-  background-image: url(../img/Segmentos_de_mercado_BSTportal.png);
+  background-image: url(../img/MarketsSpanish.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -415,7 +453,7 @@ html {
   width: 100%;
 }
 .clipptath_eng {
-  background-image: url(../img/Segmentos_de_mercado_BSTportal.png);
+  background-image: url(../img/MarketsEnglish.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -425,7 +463,7 @@ html {
   width: 100%;
 }
 .clipptath_ale {
-  background-image: url(../img/Segmentos_de_mercado_BSTportal.png);
+  background-image: url(../img/MarketsGerman.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -435,7 +473,7 @@ html {
   width: 100%;
 }
 .clipptath_fra {
-  background-image: url(../img/Segmentos_de_mercado_BSTportal.png);
+  background-image: url(../img/MarketsFrench.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -445,7 +483,7 @@ html {
   width: 100%;
 }
 .clipptath_ita {
-  background-image: url(../img/Segmentos_de_mercado_BSTportal.png);
+  background-image: url(../img/MarketsItalian.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -455,7 +493,7 @@ html {
   width: 100%;
 }
 .clipptath_por {
-  background-image: url(../img/Segmentos_de_mercado_BSTportal.png);
+  background-image: url(../img//MarketsPortuguese.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
