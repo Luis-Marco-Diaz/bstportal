@@ -253,6 +253,7 @@ html {
 .home_de {
   background-image: url(../img/Landing-Header_DEUTSCH.jpg);
   /* Create the parallax scrolling effect */
+  height: 950px;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: contain;
@@ -262,6 +263,7 @@ html {
 .home_fr {
   background-image: url(../img/Landing-Header_French.jpg);
   /* Create the parallax scrolling effect */
+  height: 950px;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: contain;
@@ -291,7 +293,7 @@ html {
 
 .home_es {
   background-image: url(../img/Landing-Header_Español.jpg);
-  min-height: 980px;
+  min-height: 950px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-repeat: no-repeat;
