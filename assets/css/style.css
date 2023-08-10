@@ -692,9 +692,24 @@ html {
     background-size: 1200px;
     background-position: center;
     background-color: #000000;
-  }  
+  } 
+  .home_es{
+    background-size: 1200px;
+  }
+  .home_fr{
+    background-size: 1200px;
+  }
+  .home_de{
+    background-size: 1200px;
+  }
+  .home_it{
+    background-size: 1200px;
+  }
+  .home_pt{
+    background-size: 1200px;
+  }
   .card_video {
-    width: 80%;
+    width: 90%;
     height: 750px;
   }
 }
