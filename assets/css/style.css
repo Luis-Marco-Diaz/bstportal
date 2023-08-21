@@ -935,6 +935,158 @@ html {
     gap: 3rem;
   }
 
+  .clipptath_eng{
+    display: none;
+  }
+  .clipptath{
+    display: none;
+  }
+  .clipptath_por{
+    display: none;
+  }
+  .clipptath_ita{
+    display: none;
+  } 
+  .clipptath_ale{
+    display: none;
+  }
+  .clipptath_fra{
+    display: none;
+  }
+  .clipptath_eng_responsive{
+  background-image: url(../img/MKTIng1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  height: 650px;
+  width: 100%;
+  }
+  .clipptath_eng_responsive_2{
+    background-image: url(../img/MKTIng2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 650px;
+    width: 100%;
+  }
+  .clipptath_sp_responsive{
+    background-image: url(../img/MKSEsp1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 650px;
+    width: 100%;
+    }
+    .clipptath_sp_responsive_2{
+      background-image: url(../img/MKTEsp2.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+      height: 650px;
+      width: 100%;
+      }
+      .clipptath_por_responsive{
+        background-image: url(../img/MKTPor1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+        height: 650px;
+        width: 100%;
+        }
+        .clipptath_por_responsive_2{
+          background-image: url(../img/MKTPor2.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+          margin: 0;
+          padding: 0;
+          height: 650px;
+          width: 100%;
+          }
+      .clipptath_ita_responsive{
+            background-image: url(../img/MKTIta1.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            height: 650px;
+            width: 100%;
+            }
+      .clipptath_ita_responsive_2{
+              background-image: url(../img/MKTIta2.png);
+              background-repeat: no-repeat;
+              background-size: contain;
+              background-position: center;
+              margin: 0;
+              padding: 0;
+              height: 650px;
+              width: 100%;
+      }
+      .clipptath_ale_responsive{
+        background-image: url(../img/MKTale1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+        height: 650px;
+        width: 100%;
+        }
+      .clipptath_ale_responsive_2{
+              background-image: url(../img/MKTale2.png);
+              background-repeat: no-repeat;
+              background-size: contain;
+              background-position: center;
+              margin: 0;
+              padding: 0;
+              height: 650px;
+              width: 100%;
+      }
+      .clipptath_fra_responsive{
+        background-image: url(../img/MKTFra1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+        height: 650px;
+        width: 100%;
+        }
+      .clipptath_fra_responsive_2{
+              background-image: url(../img/MKTFra2.png);
+              background-repeat: no-repeat;
+              background-size: contain;
+              background-position: center;
+              margin: 0;
+              padding: 0;
+              height: 650px;
+              width: 100%;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .card_video {
     width: 100%;
     height: 450px;
