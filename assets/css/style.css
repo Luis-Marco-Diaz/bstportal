@@ -693,13 +693,12 @@ html {
   margin: auto;
   position: relative;
   top: 0px;
-  height: 58px;
+  height: 3%;
   width: 100%;
   text-align:center;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.776)
 }
 #infobox3 p {
-  line-height:58px;
   font-size:12px;
   text-align:center;
 }
