@@ -1,0 +1,290 @@
+h1,h2{
+ line-height: 10px;
+}
+.controls{
+  display: flex;
+  margin: 20px;
+}
+#todo {
+display: flex;
+flex-wrap: wrap;
+}
+.blog {
+    background-image: url(/assets/img/Conection-world-BSTPortal-Landing-Body.png);
+    height: auto;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #000000;
+  }
+  .megazzinehome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+iframe {
+    width: 100%;
+    height: 650px;
+    border: none;
+}
+img{
+  cursor: auto;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 150px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  /* Modal Content */
+.modal-content {
+    color: #000;
+    background-color: #00000052;
+    margin: auto;
+    padding: 5px;
+    border-radius: 10px;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #e0e0e0;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #ff0000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .selector{
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 5px;
+  }
+  .selector:hover{
+    color: #ff0000;
+  }
+  
+  .img_cards2 {
+      width: 150px;
+      }
+      .mg{
+      width: 200px;
+      border-radius: 5px;
+      transition: 0.5s;
+      }
+      .mg:hover {
+      transform: scaleY(1.1) scaleX(1.1);
+      }
+      .eb{
+        width: 200px;
+        border-radius: 5px;
+        transition: 0.5s;
+        }
+        .eb:hover {
+        transform: scaleY(1.1) scaleX(1.1);
+        }
+        .nw{
+          width: 200px;
+          border-radius: 5px;
+          transition: 0.5s;
+          }
+          .nw:hover {
+          transform: scaleY(1.1) scaleX(1.1);
+          }
+          .ar{
+            width: 200px;
+            border-radius: 5px;
+            transition: 0.5s;
+            }
+            .ar:hover {
+            transform: scaleY(1.1) scaleX(1.1);
+            }
+      .container{
+        padding-top: 1rem;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        background-color: #00000000;
+    }
+    .book-content{
+        width: 550px;
+        height: 530px;
+        position: relative;
+        perspective: 1000px;
+        transition: 1s;
+    }
+    .book{
+        position: absolute;
+        box-shadow: 10px 5px 10px 1px rgba(185, 185, 185, 0.116);
+        width: 65%;
+        height: 100%;
+        transition: 1s;
+        transform-style: preserve-3d;
+        transform-origin: left;
+    }
+    .book:hover{
+      cursor: pointer;
+
+    }
+    .face-front, .face-back{
+        width: 100%;
+        height: 100%;
+        background: white;
+        padding: 15px;
+        box-sizing: border-box;
+        overflow: hidden;
+        
+    }
+    .face-front{
+        box-shadow: inset 3px 0px 20px -7px rgb(201, 201, 201);
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+    .face-back{
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateZ(-1px) rotateY(180deg);
+        box-shadow: inset -3px 1px 20px -7px rgb(201, 201, 201);
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+    .adownload{
+      display: none;
+    }
+    .bdownloadcontainer{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    .bdownload{
+      padding: .75rem 1.5rem;
+      font-size: 20px;
+      color: #ffffff;
+      background-color: #ff0000;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      box-sizing: border-box;
+      width: fit-content;
+      text-decoration: none;
+      font-family: 'Geologica', system-ui, -apple-system, BlinkMacSystemFont, 'Open Sans', 'Helvetica Neue';
+      margin-top: 20px;
+    }
+   
+
+  
+  @media only screen and (width <= 950px) {
+    h1, h2 {
+      justify-content: center;
+      text-align: center;
+    }
+    *{
+      box-sizing: border-box;
+    }
+    .regishome{
+      min-height: auto; 
+      gap: 0;
+      padding-top: 40px;
+    }
+    .home_regis{
+      height: 1200px;
+    }
+    .home_regis2{
+    padding-top: 100px;
+    }
+    .regisContainer1{
+      display: flex;
+      flex-direction: column;
+      margin-top: 100px;
+      height: 850px;
+    }
+    .regisContainer2{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      padding-bottom: 15px;
+    }
+  .HomeH1 {
+  font-size: 250%;
+  width: auto;
+  text-align: center;
+  margin-top: 100px;
+  }
+  .HomeTxt{
+  width: auto;
+  text-align: justify;
+  padding: 3%;
+  }
+  .container{
+    margin-left: 180px;
+  }
+  
+  .ulmobilecontainer{
+    margin-top: 1%;
+    padding-bottom: 10px;
+  }
+  .ulmobile{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+  }
+  li {
+    text-align: left;
+  }
+  .inline__container{
+    padding: 10px 5px 5px 5px
+  }
+  .containerGrid {  display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "one two"
+        "three four"
+        "five six"
+        "seven eight";
+    }
+  .footermobile{
+    padding-top: 500px;
+  }
+  .adownload{
+    display: none;
+  }
+  }
+
+  @media only screen and (width <= 900px){
+  .adownload{
+    display: block;
+    color: rgb(253, 5, 5);
+  }
+  .adownload:hover{
+    color:#6d04a1
+  }
+  }
