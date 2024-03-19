@@ -11,10 +11,12 @@ h1,h2{
   display: flex;
   margin: 20px;
   text-decoration:underline;
+  justify-content: center;
 }
 #todo {
 display: flex;
 flex-wrap: wrap;
+margin-bottom: 10%;
 }
 .blog {
     background-image: url(/assets/img/magazine/WhiteBackground.png);
@@ -40,6 +42,8 @@ iframe {
     height: 750px;
     border: none;
 }
+
+
 img{
   cursor: auto;
 }
@@ -205,11 +209,36 @@ img{
     .bdownload:hover{
       transform: scaleY(1.1) scaleX(1.1);
     }
-   .carrusel{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   }
+    .carrusel {
+      display: grid; 
+      grid-auto-rows: 1fr; 
+      grid-template-columns: 1.5fr 1fr; 
+      gap: 1px 1px; 
+    }
+    .Description { 
+      grid-area: 1 / 2 / 2 / 3;
+      padding-right: 10px;
+    }
+    .DownloadSection{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 50px 0px;
+      justify-content: space-around; 
+      align-content: space-around; 
+      grid-auto-flow: row;
+      grid-template-areas:
+        "English Spanish"
+        "French German"
+        "talian Portuguese";
+    }
+    .areas{ 
+      justify-self: center;
+    }
+  .Latestmobile{
+    display: none;
+  }
+    
    .Edge{
     animation-name: parpadeo;
   animation-duration: 2s;
@@ -300,7 +329,8 @@ img{
   .inline__container{
     padding: 10px 5px 5px 5px
   }
-  .containerGrid {  display: grid;
+  .containerGrid { 
+      display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
       gap: 0px 0px;
@@ -317,6 +347,24 @@ img{
   .adownload{
     display: none;
   }
+  .carrusel{
+    display: grid; 
+      grid-auto-rows: 1fr; 
+      grid-template-columns: 1fr; 
+      gap: 1px 1px;
+      margin: 15px;
+  }
+  .Latestmobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .controls{
+    justify-content: center;
+    align-items: center;
+  }
+
   }
 
   @media only screen and (width <= 900px){
