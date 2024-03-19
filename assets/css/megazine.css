@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: 'Geologica', system-ui, -apple-system, BlinkMacSystemFont, 'Open Sans', 'Helvetica Neue';
+  color: black;
 }
 h1,h2{
  line-height: 10px;
@@ -16,7 +17,7 @@ display: flex;
 flex-wrap: wrap;
 }
 .blog {
-    background-image: url(/assets/img/Conection-world-BSTPortal-Landing-Body.png);
+    background-image: url(/assets/img/magazine/WhiteBackground.png);
     height: auto;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -311,7 +312,7 @@ img{
         "seven eight";
     }
   .footermobile{
-    padding-top: 500px;
+    padding-top: 50px;
   }
   .adownload{
     display: none;
