@@ -29,7 +29,7 @@ function aceptar_cookies(){
     }
 }
  
-$(function() {
+(function() {
     var visit=GetCookie("cookies_surestao");
     if (visit==1){ popbox3(); }
 });
